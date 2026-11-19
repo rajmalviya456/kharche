@@ -3,193 +3,166 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kharche Calculator Privacy Policy</title>
+<title>Kharche Calculator: EMI calculator, bills, udhaar and money tools for India</title>
+<meta name="description" content="Kharche Calculator is a free EMI and loan calculator made for India, with bill reminders, an udhaar ledger, a credit card payoff plan and 30+ money tools, in English and 6 Indian languages.">
+<meta property="og:title" content="Kharche Calculator: your money, at a glance">
+<meta property="og:description" content="EMI calculator, bill reminders, udhaar ledger, loan tracker and 30+ money tools for India.">
+<meta property="og:image" content="img/3_tools.jpg">
+<link rel="icon" href="img/icon.png">
 <style>
   :root {
     --bg: #ffffff;
+    --soft: #f1f7f6;
     --text: #1c1b1f;
     --muted: #5f5b66;
     --line: #e3e0e8;
     --accent: #00796b;
+    --accent-dark: #004d43;
+    --on-accent: #ffffff;
   }
   @media (prefers-color-scheme: dark) {
     :root {
       --bg: #141218;
+      --soft: #1c2422;
       --text: #e6e1e9;
       --muted: #b0aab8;
       --line: #2f2b36;
       --accent: #80cbc4;
+      --accent-dark: #00796b;
+      --on-accent: #00201c;
     }
   }
+  * { box-sizing: border-box; }
   body {
     margin: 0;
     background: var(--bg);
     color: var(--text);
-    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   }
-  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
-  h1 { font-size: 1.8rem; margin: 0 0 4px; }
-  h2 { font-size: 1.2rem; margin: 32px 0 8px; }
-  p, li { color: var(--text); }
-  .muted { color: var(--muted); }
   a { color: var(--accent); }
-  table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 0.95rem; }
-  th, td { text-align: left; vertical-align: top; padding: 8px; border-bottom: 1px solid var(--line); }
-  .wrap { overflow-x: auto; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+  header.hero {
+    background: linear-gradient(135deg, #00796b, #004d43);
+    color: #ffffff;
+    padding: 48px 0 56px;
+  }
+  .brand { display: flex; align-items: center; gap: 12px; font-weight: 600; font-size: 1.2rem; }
+  .brand img { width: 44px; height: 44px; border-radius: 12px; }
+  .hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 32px; align-items: center; margin-top: 32px; }
+  h1 { font-size: clamp(2rem, 5vw, 3.1rem); line-height: 1.15; margin: 0 0 16px; }
+  .lead { font-size: 1.15rem; opacity: 0.92; margin: 0 0 24px; }
+  .cta { display: inline-block; background: #ffffff; color: #00594f; font-weight: 600; padding: 14px 22px; border-radius: 999px; text-decoration: none; }
+  .note { font-size: 0.9rem; opacity: 0.85; margin-top: 12px; }
+  .phone { width: 100%; max-width: 360px; justify-self: center; border-radius: 28px; box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35); }
+  section { padding: 56px 0; }
+  section.soft { background: var(--soft); }
+  h2 { font-size: 1.7rem; margin: 0 0 8px; }
+  .sub { color: var(--muted); margin: 0 0 28px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
+  .card { border: 1px solid var(--line); border-radius: 16px; padding: 20px; background: var(--bg); }
+  .card h3 { margin: 8px 0 6px; font-size: 1.1rem; }
+  .card p { margin: 0; color: var(--muted); font-size: 0.97rem; }
+  .icon { width: 40px; height: 40px; border-radius: 12px; background: var(--soft); display: grid; place-items: center; font-size: 1.3rem; }
+  .shots { display: flex; gap: 16px; overflow-x: auto; padding-bottom: 8px; scroll-snap-type: x mandatory; }
+  .shots img { width: 240px; flex: 0 0 auto; border-radius: 18px; scroll-snap-align: start; border: 1px solid var(--line); }
+  ul.tools { columns: 2; column-gap: 32px; padding-left: 20px; margin: 0; }
+  ul.tools li { margin-bottom: 6px; break-inside: avoid; }
+  .promise { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+  .promise div { border-left: 3px solid var(--accent); padding-left: 12px; }
+  footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: 0.92rem; }
+  footer a { margin-right: 16px; }
+  @media (max-width: 760px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .phone { max-width: 280px; }
+    ul.tools { columns: 1; }
+  }
 </style>
 </head>
 <body>
-<main>
-<h1>Kharche Calculator Privacy Policy</h1>
-<p class="muted">Effective date: 18 November 2026. Updated 19 November 2026: new app name, and App lock.</p>
+<header class="hero">
+  <div class="wrap">
+    <div class="brand"><img src="img/icon.png" alt="">Kharche Calculator</div>
+    <div class="hero-grid">
+      <div>
+        <h1>Your money, at a glance.</h1>
+        <p class="lead">Work out any EMI, keep every due date, track your
+          loans and udhaar, and plan to become debt-free sooner. Made for
+          India, in English and 6 Indian languages.</p>
+        <a class="cta" href="https://play.google.com/store/apps/details?id=com.rajmalviya.kistt">Get it on Google Play</a>
+        <p class="note">Free. No sign-in. Your data stays on your phone.</p>
+      </div>
+      <img class="phone" src="img/3_tools.jpg" alt="Kharche Home: bills due, loans, udhaar and cards at a glance, and popular tools">
+    </div>
+  </div>
+</header>
 
-<p>This policy explains what data the Kharche Calculator app ("Kharche", "the app") handles
-on Android and iOS, why, and the choices you have. Kharche is made by
-Raj Malviya, an individual developer ("I", "me").</p>
+<section>
+  <div class="wrap">
+    <h2>Everything in one app</h2>
+    <p class="sub">Four tabs: Home, My money, Tools and Settings.</p>
+    <div class="cards">
+      <div class="card"><div class="icon">🧮</div><h3>EMI calculator</h3>
+        <p>EMI, interest and total for every kind of loan, in lakh and crore, with the full schedule as PDF or CSV.</p></div>
+      <div class="card"><div class="icon">🧾</div><h3>Bills and dues</h3>
+        <p>Rent, cards, insurance, school fees and more, with reminders before the due date. Swipe to mark paid.</p></div>
+      <div class="card"><div class="icon">🤝</div><h3>Udhaar ledger</h3>
+        <p>Note money you lend or borrow, see who owes what, and send a polite reminder on WhatsApp or SMS.</p></div>
+      <div class="card"><div class="icon">💳</div><h3>Credit card payoff</h3>
+        <p>See what paying only the minimum due really costs, and plan to clear it in 6, 12 or 24 months.</p></div>
+      <div class="card"><div class="icon">🏦</div><h3>My loans</h3>
+        <p>EMIs paid, balance left, the next EMI, rate changes, part-payments and how to pay off faster.</p></div>
+      <div class="card"><div class="icon">📈</div><h3>Insights</h3>
+        <p>Loan health check, a yearly home loan tax summary and a loan closure checklist.</p></div>
+    </div>
+  </div>
+</section>
 
-<h2>Summary</h2>
-<ul>
-  <li>Your loans, bills, credit card balances, money lent or borrowed,
-    payments, reminders and settings stay on your phone (and in your phone's
-    own backup, if you use one). I never receive them.</li>
-  <li>Kharche has no accounts or sign-in.</li>
-  <li>App lock, if you turn it on, uses your phone's own fingerprint, face
-    or screen-lock check. Kharche only learns whether it passed; it never
-    sees or stores your fingerprint, face or PIN.</li>
-  <li>Ads (Google AdMob) and purchases (RevenueCat, Google Play, App Store)
-    are run by third parties that receive limited device and usage data,
-    described below.</li>
-  <li>Kharche is meant for adults (18 and over).</li>
-</ul>
+<section class="soft">
+  <div class="wrap">
+    <h2>See it</h2>
+    <p class="sub">Real screens from the app.</p>
+    <div class="shots">
+      <img src="img/1_calculator.jpg" alt="EMI calculator" loading="lazy">
+      <img src="img/5_bills.jpg" alt="Bills and dues" loading="lazy">
+      <img src="img/6_ledger.jpg" alt="Udhaar ledger" loading="lazy">
+      <img src="img/7_cards.jpg" alt="Credit card payoff" loading="lazy">
+      <img src="img/8_hindi.jpg" alt="Kharche in Hindi" loading="lazy">
+    </div>
+  </div>
+</section>
 
-<h2>Data that stays on your phone</h2>
-<p>Everything you enter (loan amounts, interest rates, tenures, start dates,
-paid instalments, bills and their due dates, credit card balances, money
-lent or borrowed and the names you give those people, your loan closure
-checklist, reminders, preferences) is stored on your device. It is never sent
-to me. Take-home pay typed into the loan health check is used on that screen
-only and is not saved.</p>
-<p>If your phone backs up apps (Google backup on Android, iCloud or a
-computer backup on iPhone), that backup can include Kharche's data. It is
-kept in your own Google or Apple account, which I cannot read, and is
-restored if you reinstall Kharche. Uninstalling the app deletes the data from
-the phone; a backup in your own account stays until you remove it there.</p>
-<p>Some features send data off the phone only when you choose to:</p>
-<ul>
-  <li><strong>PDF / CSV export and backup:</strong> a file is created and handed
-    to the app you pick (email, Drive, WhatsApp and so on). Where it goes
-    from there is up to you and that app.</li>
-  <li><strong>Udhaar ledger reminders:</strong> if you tap Send a polite
-    reminder, the message, with the person's name and the amount, is handed to
-    the app you pick (WhatsApp, SMS and so on). Nothing is sent until you
-    choose to send it there.</li>
-  <li><strong>Share diagnostics:</strong> the app keeps a small error log on the
-    phone. Nothing is sent automatically; if you tap Share diagnostics, you
-    choose where the log goes.</li>
-  <li><strong>Reminders and the home-screen widget</strong> run on the phone
-    using the system's notification and widget services.</li>
-</ul>
+<section>
+  <div class="wrap">
+    <h2>30+ money tools</h2>
+    <p class="sub">Search them, or filter by what you are planning.</p>
+    <ul class="tools">
+      <li><b>Loans:</b> how much can I borrow, down payment, education loan, find my rate, how long to repay, close early, compare offers, credit card EMI, no-cost EMI, balance transfer, repo rate change</li>
+      <li><b>Salary and tax:</b> income tax old or new regime, in-hand salary, HRA, EPF, gratuity, NPS, GST, home loan tax benefit</li>
+      <li><b>Home and goals:</b> home buying cost, rent or buy, goal planner, prepay or invest</li>
+      <li><b>Save and invest:</b> fixed deposit, recurring deposit, SIP with step-up, PPF</li>
+    </ul>
+  </div>
+</section>
 
-<h2>Data collected by third parties</h2>
-<div class="wrap">
-<table>
-  <tr><th>Service</th><th>Data</th><th>Purpose</th></tr>
-  <tr>
-    <td>Google AdMob (Google Mobile Ads SDK, with Google's User Messaging Platform)</td>
-    <td>Advertising ID and other device identifiers, approximate location
-      derived from IP address, ad interactions (views, taps), diagnostics
-      about ad loading and performance.</td>
-    <td>Showing ads, measuring them, analytics, fraud prevention and
-      security. Shared with Google and its advertising partners.</td>
-  </tr>
-  <tr>
-    <td>RevenueCat</td>
-    <td>Purchase history (products bought, transaction ids, dates, prices),
-      a random app user id that is not linked to your name or email, and
-      basic app and device details (platform, app version, store
-      country).</td>
-    <td>Unlocking and restoring Premium. RevenueCat processes this on my
-      behalf.</td>
-  </tr>
-  <tr>
-    <td>Google Play Billing / Apple App Store</td>
-    <td>Payment details, handled entirely by Google or Apple.</td>
-    <td>Processing purchases. I never see your card, UPI or bank
-      details.</td>
-  </tr>
-</table>
-</div>
-<p>All of this data is sent over encrypted connections (HTTPS). See
-<a href="https://policies.google.com/privacy">Google's Privacy Policy</a>,
-<a href="https://policies.google.com/technologies/partner-sites">how Google uses
-data from apps that use its services</a> and
-<a href="https://www.revenuecat.com/privacy">RevenueCat's Privacy Policy</a>.</p>
-<p>Premium users see no ads. Free users can
-watch a rewarded ad, only if they tap the button, to unlock a single
-export.</p>
+<section class="soft">
+  <div class="wrap">
+    <h2>Made for you</h2>
+    <div class="promise">
+      <div><b>Private</b><br>No accounts. Your loans, bills and ledger never leave your phone.</div>
+      <div><b>Your language</b><br>English, हिंदी, मराठी, ગુજરાતી, தமிழ், తెలుగు and বাংলা.</div>
+      <div><b>Calm ads</b><br>A small banner, and a full-screen ad only after you get your answer.</div>
+      <div><b>Free</b><br>Every feature, PDF, CSV and backup included.</div>
+    </div>
+  </div>
+</section>
 
-<h2>Your choices</h2>
-<ul>
-  <li><strong>Ad consent:</strong> where the law requires it (for example in the
-    EEA, UK and Switzerland), Kharche asks for consent before personalised
-    ads. You can change your choice any time in Settings &rsaquo; Privacy
-    choices.</li>
-  <li><strong>Advertising ID (Android):</strong> reset or delete it in Android
-    Settings &rsaquo; Privacy &rsaquo; Ads (or Google &rsaquo; Ads).</li>
-  <li><strong>Tracking (iOS):</strong> Kharche asks through Apple's App Tracking
-    Transparency prompt; you can change it in iOS Settings &rsaquo; Privacy
-    &amp; Security &rsaquo; Tracking.</li>
-  <li><strong>Notifications:</strong> turn EMI reminders off in Kharche
-    (My loans &rsaquo; EMI reminders, or the bell on a loan), bill reminders
-    off in Bills and dues, or either in the phone's notification
-    settings.</li>
-</ul>
-
-<h2>Deleting your data</h2>
-<p>Data on your phone: uninstall the app, or clear its data in your phone's
-settings. Data in your phone's backup: delete it in your Google account
-(Android) or iCloud / computer backups (iPhone).</p>
-<p>Purchase data held by RevenueCat: email me at <a href="mailto:raj.malviya456@gmail.com">raj.malviya456@gmail.com</a> with your
-Google Play order number (starts with <code>GPA.</code>) or App Store
-receipt, and I will delete the matching RevenueCat record and confirm by
-email, usually within 30 days. Your purchase stays valid with Google or
-Apple and can be restored later.</p>
-<p>Advertising data is controlled by Google; use the advertising ID controls
-above and Google's own tools at
-<a href="https://myadcenter.google.com">My Ad Center</a>.</p>
-
-<h2>Retention</h2>
-<p>I do not store your data on any server of my own. Your phone's backup is
-kept by Google or Apple in your own account. RevenueCat keeps
-purchase records for as long as needed to provide Premium and meet legal
-and accounting duties, or until you ask me to delete them. Google keeps
-advertising data according to its own policies.</p>
-
-<h2>Children</h2>
-<p>Kharche is a finance tool for adults and is not directed at children under
-18. I do not knowingly collect data from children. If you believe a child
-has used the app and data was collected, contact me and I will help remove
-it.</p>
-
-<h2>Security</h2>
-<p>Data leaves the phone only over encrypted connections. Data on the phone
-is protected by your device's own security; keep your phone locked and
-updated.</p>
-
-<h2>Your rights</h2>
-<p>Depending on where you live (for example under India's Digital Personal
-Data Protection Act, 2023, or the EU/UK GDPR), you may have the right to
-access, correct or delete personal data, and to withdraw consent. Contact
-me to use these rights.</p>
-
-<h2>Changes to this policy</h2>
-<p>If this policy changes, the new version will be posted on this page with
-a new effective date. Significant changes will also be noted in the app's
-release notes.</p>
-
-<h2>Contact</h2>
-<p>Raj Malviya<br>
-Email: <a href="mailto:raj.malviya456@gmail.com">raj.malviya456@gmail.com</a></p>
-</main>
+<footer>
+  <div class="wrap">
+    <p>Kharche gives estimates for planning only. It is not a loan offer or
+      financial advice; check with your lender.</p>
+    <p><a href="privacy.html">Privacy policy</a><a href="https://play.google.com/store/apps/details?id=com.rajmalviya.kistt">Google Play</a></p>
+    <p>© 2026 Raj Malviya</p>
+  </div>
+</footer>
 </body>
 </html>
