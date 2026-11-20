@@ -41,7 +41,7 @@
 <body>
 <main>
 <h1>Kharche Calculator Privacy Policy</h1>
-<p class="muted">Effective date: 18 November 2026. Updated 20 November 2026: optional Google Drive backup.</p>
+<p class="muted">Effective date: 18 November 2026. Updated 20 November 2026: optional Google Drive backup; backups are encrypted with your password.</p>
 
 <p>This policy explains what data the Kharche Calculator app ("Kharche", "the app") handles
 on Android and iOS, why, and the choices you have. Kharche is made by
@@ -82,11 +82,18 @@ the phone; a backup in your own account stays until you remove it there.</p>
     you sign in with Google and allow Kharche to use its own hidden app
     folder in your Google Drive. A copy of your Kharche data is saved there
     when you turn it on and about once a day after that, straight from your
-    phone to Google over an encrypted connection. Kharche can see only that
+    phone to Google over an encrypted connection. The copy is itself
+    encrypted on your phone with your backup password (AES-256), so neither
+    Google nor I can read it. Kharche can see only that
     folder, not your other Drive files, and I never receive the copy or your
     sign-in. Turning it off signs Kharche out; the last copy stays in your
     Drive until you delete it (Google Drive › Settings › Manage apps ›
     Kharche › Delete hidden app data).</li>
+  <li><strong>Backup password:</strong> every backup, in Drive or as a file, is
+    encrypted on your phone with a password you choose. The password is
+    kept only in your phone's secure storage (Android Keystore or iOS
+    Keychain), never in a backup and never sent anywhere. Without it a
+    backup cannot be restored, and I cannot recover it.</li>
   <li><strong>PDF / CSV export and backup:</strong> a file is created and handed
     to the app you pick (email, Drive, WhatsApp and so on). Where it goes
     from there is up to you and that app.</li>
