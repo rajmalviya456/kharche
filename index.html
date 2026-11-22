@@ -3,33 +3,33 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kharche Calculator: EMI calculator, bills, udhaar and money tools for India</title>
-<meta name="description" content="Kharche Calculator is a free EMI and loan calculator made for India, with bill reminders, an udhaar ledger, a credit card payoff plan and 30+ money tools, in English and 6 Indian languages.">
-<meta property="og:title" content="Kharche Calculator: your money, at a glance">
-<meta property="og:description" content="EMI calculator, bill reminders, udhaar ledger, loan tracker and 30+ money tools for India.">
+<title>My Money: budget, loans, bills and money tools</title>
+<meta name="description" content="My Money is a free budget and expense tracker with a loan payment calculator, bill reminders, lend &amp; borrow, a credit card payoff plan and 15+ money tools, in your currency and 14 languages.">
+<meta property="og:title" content="My Money: your money, at a glance">
+<meta property="og:description" content="Expense tracker, loan payment calculator, bill reminders, lend &amp; borrow and 15+ money tools, in your currency and 14 languages.">
 <meta property="og:image" content="img/1_home.jpg">
 <link rel="icon" href="img/icon.png">
 <style>
   :root {
     --bg: #ffffff;
-    --soft: #f1f7f6;
+    --soft: #f3f3fb;
     --text: #1c1b1f;
     --muted: #5f5b66;
     --line: #e3e0e8;
-    --accent: #00796b;
-    --accent-dark: #004d43;
+    --accent: #4f46e5;
+    --accent-dark: #3730a3;
     --on-accent: #ffffff;
   }
   @media (prefers-color-scheme: dark) {
     :root {
       --bg: #141218;
-      --soft: #1c2422;
+      --soft: #1d1c26;
       --text: #e6e1e9;
       --muted: #b0aab8;
       --line: #2f2b36;
-      --accent: #80cbc4;
-      --accent-dark: #00796b;
-      --on-accent: #00201c;
+      --accent: #a5b4fc;
+      --accent-dark: #4f46e5;
+      --on-accent: #1e1b4b;
     }
   }
   * { box-sizing: border-box; }
@@ -42,7 +42,7 @@
   a { color: var(--accent); }
   .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
   header.hero {
-    background: linear-gradient(135deg, #00796b, #004d43);
+    background: linear-gradient(135deg, #4f46e5, #3730a3);
     color: #ffffff;
     padding: 48px 0 56px;
   }
@@ -51,7 +51,7 @@
   .hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 32px; align-items: center; margin-top: 32px; }
   h1 { font-size: clamp(2rem, 5vw, 3.1rem); line-height: 1.15; margin: 0 0 16px; }
   .lead { font-size: 1.15rem; opacity: 0.92; margin: 0 0 24px; }
-  .cta { display: inline-block; background: #ffffff; color: #00594f; font-weight: 600; padding: 14px 22px; border-radius: 999px; text-decoration: none; }
+  .cta { display: inline-block; background: #ffffff; color: #3730a3; font-weight: 600; padding: 14px 22px; border-radius: 999px; text-decoration: none; }
   .note { font-size: 0.9rem; opacity: 0.85; margin-top: 12px; }
   .phone { width: 100%; max-width: 360px; justify-self: center; border-radius: 28px; box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35); }
   section { padding: 56px 0; }
@@ -81,17 +81,18 @@
 <body>
 <header class="hero">
   <div class="wrap">
-    <div class="brand"><img src="img/icon.png" alt="">Kharche Calculator</div>
+    <div class="brand"><img src="img/icon.png" alt="">My Money</div>
     <div class="hero-grid">
       <div>
         <h1>Your money, at a glance.</h1>
-        <p class="lead">Work out any EMI, keep every due date, track your
-          loans and udhaar, and plan to become debt-free sooner. Made for
-          India, in English and 6 Indian languages.</p>
+        <p class="lead">Note what you spend, keep every due date, work out
+          any loan payment, track your loans and IOUs, and plan to become
+          debt-free sooner. In your currency, with tools for your country,
+          in 14 languages.</p>
         <a class="cta" href="https://play.google.com/store/apps/details?id=com.rajmalviya.kistt">Get it on Google Play</a>
         <p class="note">No account needed. Your data stays on your phone.</p>
       </div>
-      <img class="phone" src="img/1_home.jpg" alt="Kharche Home: net worth, bills due, spending, loans and udhaar at a glance">
+      <img class="phone" src="img/1_home.jpg" alt="My Money Home: net worth, bills due, spending, loans and IOUs at a glance">
     </div>
   </div>
 </header>
@@ -101,18 +102,18 @@
     <h2>Everything in one app</h2>
     <p class="sub">Four tabs: Home, My money, Tools and Settings.</p>
     <div class="cards">
-      <div class="card"><div class="icon">🧮</div><h3>EMI calculator</h3>
-        <p>EMI, interest and total for every kind of loan, in lakh and crore, with the full schedule as PDF or CSV.</p></div>
+      <div class="card"><div class="icon">🧮</div><h3>Loan payment calculator</h3>
+        <p>Monthly payment (EMI), interest and total for every kind of loan, in your currency, with the full schedule as PDF or CSV.</p></div>
       <div class="card"><div class="icon">🧾</div><h3>Bills and dues</h3>
         <p>Rent, cards, insurance, school fees and more, with reminders before the due date. Swipe to mark paid.</p></div>
-      <div class="card"><div class="icon">🤝</div><h3>Udhaar ledger</h3>
+      <div class="card"><div class="icon">🤝</div><h3>Lend &amp; borrow</h3>
         <p>Note money you lend or borrow, see who owes what, and send a polite reminder on WhatsApp or SMS.</p></div>
       <div class="card"><div class="icon">💳</div><h3>Credit card payoff</h3>
-        <p>See what paying only the minimum due really costs, and plan to clear it in 6, 12 or 24 months.</p></div>
+        <p>See what paying only the minimum really costs, and plan to clear it in 6, 12 or 24 months.</p></div>
       <div class="card"><div class="icon">🏦</div><h3>My loans</h3>
-        <p>EMIs paid, balance left, the next EMI, rate changes, part-payments and how to pay off faster.</p></div>
+        <p>Payments made, balance left, the next payment, rate changes, extra payments and how to pay off faster.</p></div>
       <div class="card"><div class="icon">📈</div><h3>Insights</h3>
-        <p>Loan health check, a yearly home loan tax summary and a loan closure checklist.</p></div>
+        <p>Loan health check, a loan closure checklist, and in India a yearly home loan tax summary.</p></div>
       <div class="card"><div class="icon">☁️</div><h3>Backup</h3>
         <p>Optional daily backup to your own Google Drive, a backup file you keep anywhere, and app lock.</p></div>
     </div>
@@ -127,22 +128,22 @@
       <img src="img/2_expenses.jpg" alt="Expenses with a monthly budget" loading="lazy">
       <img src="img/3_bills.jpg" alt="Bills and dues" loading="lazy">
       <img src="img/4_goals.jpg" alt="Savings goals" loading="lazy">
-      <img src="img/5_calculator.jpg" alt="EMI calculator" loading="lazy">
-      <img src="img/6_ledger.jpg" alt="Udhaar ledger" loading="lazy">
-      <img src="img/8_hindi.jpg" alt="Kharche in Hindi" loading="lazy">
+      <img src="img/5_calculator.jpg" alt="Loan payment calculator" loading="lazy">
+      <img src="img/6_ledger.jpg" alt="Lend &amp; borrow" loading="lazy">
+      <img src="img/8_tools.jpg" alt="Money tools" loading="lazy">
     </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <h2>30+ money tools</h2>
+    <h2>15+ money tools, and more for your country</h2>
     <p class="sub">Search them, or filter by what you are planning.</p>
     <ul class="tools">
-      <li><b>Loans:</b> how much can I borrow, down payment, education loan, find my rate, how long to repay, close early, compare offers, credit card EMI, no-cost EMI, balance transfer, repo rate change</li>
-      <li><b>Salary and tax:</b> income tax old or new regime, in-hand salary, HRA, EPF, gratuity, NPS, GST, home loan tax benefit</li>
-      <li><b>Home and goals:</b> home buying cost, rent or buy, goal planner, prepay or invest</li>
-      <li><b>Save and invest:</b> fixed deposit, recurring deposit, SIP with step-up, PPF</li>
+      <li><b>Loans:</b> how much can I borrow, education loan, find my rate, how long to repay, close early, compare offers, credit card instalments, balance transfer</li>
+      <li><b>Home and goals:</b> down payment, home buying cost, rent or buy, goal planner, prepay or invest</li>
+      <li><b>Save and invest:</b> fixed deposit, regular savings, monthly investment with step-up</li>
+      <li><b>For your country:</b> tools made for the country you live in. India's set is the first: income tax old or new regime, in-hand salary, HRA, EPF, gratuity, NPS, GST, PPF, repo rate change, no-cost EMI, home loan tax benefit</li>
     </ul>
   </div>
 </section>
@@ -152,7 +153,7 @@
     <h2>Made for you</h2>
     <div class="promise">
       <div><b>Private</b><br>No accounts. Your loans, bills and ledger stay on your phone, or in your own Google Drive if you turn on backup.</div>
-      <div><b>Your language</b><br>English, हिंदी, मराठी, ગુજરાતી, தமிழ், తెలుగు and বাংলা.</div>
+      <div><b>Your language and currency</b><br>English, Español, Português, Français, Deutsch, Bahasa Indonesia, Türkçe, Tiếng Việt, हिंदी, मराठी, ગુજરાતી, தமிழ், తెలుగు and বাংলা, in any currency.</div>
       <div><b>Calm ads</b><br>A small banner, and a full-screen ad only after you get your answer.</div>
       <div><b>Every feature included</b><br>PDF, CSV, backup and app lock for everyone. Remove ads with one payment if you like.</div>
     </div>
@@ -161,7 +162,7 @@
 
 <footer>
   <div class="wrap">
-    <p>Kharche gives estimates for planning only. It is not a loan offer or
+    <p>My Money gives estimates for planning only. It is not a loan offer or
       financial advice; check with your lender.</p>
     <p><a href="privacy.html">Privacy policy</a><a href="https://play.google.com/store/apps/details?id=com.rajmalviya.kistt">Google Play</a></p>
     <p>© 2026 Raj Malviya</p>
